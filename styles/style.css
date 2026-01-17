@@ -4,8 +4,13 @@
   --slate-300: hsl(212, 45%, 89%);
   --slate-500: hsl(216, 15%, 48%);
   --slate-900: hsl(218, 44%, 22%);
+  
   --font-size: 15px;
   --font-family: "Outfit", sans-serif;
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
 }
 
 * {
@@ -25,34 +30,26 @@ body {
   height: 100vh;
 }
 
-.attribution {
-  margin-top: 20px;
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-.card {
-  background-color: white;
+.card-container {
   width: 320px;
+  background-color: white;
   border-radius: 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
   overflow: hidden;
   text-align: center;
-  padding: 15px;
+  padding: 16px 16px 40px 16px;
 }
 
 .card-image img {
+  margin: 0px;
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
 }
 
 .card-content {
-  padding: 20px;
+  margin-top: var(--spacing-300);
+  padding: 0px var(--spacing-200);
 }
 
 .card-title {
@@ -64,6 +61,7 @@ body {
 }
 
 .card-text {
+  margin-top: var(--spacing-200);
   font-size: 15px;
   color: var(--slate-500);
   line-height: 140%;
